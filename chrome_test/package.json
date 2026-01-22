@@ -1,0 +1,16 @@
+{
+  "name": "heyphom-chrome-test",
+  "version": "1.0.0",
+  "description": "Chrome headless test for HeyPhom upload",
+  "main": "test-upload.js",
+  "scripts": {
+    "test": "node test-upload.js",
+    "test-api": "node test-api.js",
+    "test-local": "node test-local.js",
+    "test-chunked": "node test-chunked-cloudflare.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0",
+    "form-data": "^4.0.0"
+  }
+}

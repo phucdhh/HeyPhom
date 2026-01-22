@@ -1,0 +1,240 @@
+# ============================================
+# HeyPhom .gitignore
+# ============================================
+
+# ============================================
+# macOS
+# ============================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+# ============================================
+# Swift / Xcode
+# ============================================
+core-engine/.build/
+core-engine/.swiftpm/
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+.build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+timeline.xctimeline
+playground.xcworkspace
+*.swiftpm
+Package.resolved
+
+# ============================================
+# Node.js / NPM
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.npm
+.eslintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+
+# ============================================
+# Environment & Secrets
+# ============================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.key
+*.pem
+*.cert
+*.p12
+secrets/
+credentials/
+
+# ============================================
+# HeyPhom Specific - User Data
+# ============================================
+# User directories (contains uploaded images and generated models)
+users/
+
+# Uploaded images
+backend-api/uploads/**/*
+!backend-api/uploads/.gitkeep
+
+# Generated 3D models
+backend-api/exports/**/*
+!backend-api/exports/.gitkeep
+
+# Processing sessions
+backend-api/sessions/**/*
+!backend-api/sessions/.gitkeep
+
+# Temporary files
+backend-api/temp/**/*
+!backend-api/temp/.gitkeep
+
+# Test samples (keep structure, not files)
+test/samples/**/*
+!test/samples/.gitkeep
+
+# Runtime logs
+/tmp/heyphom-*.log
+
+# ============================================
+# Logs
+# ============================================
+backend-api/logs/**/*.log
+backend-api/logs/**/*.log.*
+*.log
+*.log.gz
+logs/
+*.log.[0-9]*
+pids/
+*.pid
+*.seed
+*.pid.lock
+lib-cov/
+coverage/
+.nyc_output/
+
+# ============================================
+# PM2
+# ============================================
+.pm2/
+.pids/
+ecosystem.config.js.backup
+
+# ============================================
+# Cloudflare
+# ============================================
+.cloudflared/*.json
+*.cert.pem
+
+# ============================================
+# Nginx
+# ============================================
+nginx/logs/
+*.nginx.pid
+
+# ============================================
+# Backups
+# ============================================
+backups/
+*.backup
+*.bak
+*.sql
+*.dump
+
+# ============================================
+# IDE / Editors
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# Testing
+# ============================================
+coverage/
+.nyc_output/
+*.lcov
+
+# ============================================
+# Build outputs
+# ============================================
+dist/
+build/
+out/
+*.app
+*.dmg
+
+# ============================================
+# Miscellaneous
+# ============================================
+*.cache
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.vscode-test
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ============================================
+# Large files / Media (backup safety)
+# ============================================
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.usdz
+*.obj
+*.stl
+*.ply
+*.gltf
+*.glb
+*.fbx
+
+# Keep only example/test files
+!test/samples/example.jpg
+!docs/**/*.jpg
+!docs/**/*.png
+
+# ============================================
+# Documentation builds
+# ============================================
+docs/_build/
+docs/.doctrees/
+
+# ============================================
+# Colima / Docker (if used)
+# ============================================
+.docker/
+docker-compose.override.yml

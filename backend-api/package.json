@@ -1,0 +1,44 @@
+{
+  "name": "heyphom-api",
+  "version": "1.0.0",
+  "description": "HeyPhom Backend API - Photogrammetry Processing Server",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node src/server.js",
+    "dev": "NODE_ENV=development nodemon src/server.js",
+    "test": "NODE_ENV=test jest",
+    "lint": "eslint src/**/*.js"
+  },
+  "keywords": [
+    "photogrammetry",
+    "3d",
+    "realitykit",
+    "apple-silicon"
+  ],
+  "author": "HeyPhom Team",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/cors": "^8.5.0",
+    "@fastify/multipart": "^8.0.0",
+    "@fastify/rate-limit": "^9.1.0",
+    "@fastify/static": "^6.12.0",
+    "@fastify/websocket": "^10.0.1",
+    "axios": "^1.13.2",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.25.0",
+    "fastify-multer": "^2.0.3",
+    "fs-extra": "^11.3.3",
+    "nanoid": "^3.3.7",
+    "pino": "^8.17.0",
+    "pino-pretty": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

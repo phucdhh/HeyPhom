@@ -206,6 +206,7 @@ out/
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+chrome_test/
 
 # ============================================
 # Large files / Media (backup safety)
